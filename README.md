@@ -1,6 +1,6 @@
 # 👋 Hello
 
-Hello everyone, i am **Suraj Kareppagol** an this is my github profile.
+Hello everyone, i am **Suraj Kareppagol** and this is my github profile.
 
 I am currently studying in my 4th year of B.E (Computer Science and Engineering) and building computer programmes.
 
