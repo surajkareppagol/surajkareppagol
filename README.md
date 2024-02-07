@@ -1,14 +1,12 @@
 # Hello 👋
 
-Hi, i'm Suraj.
-
 I am a 👨🏻‍💻 computer science student interested in computers and the way they work. I enjoy tinkering with libraries, software tools, and algorithms. Additionally, I like 💾 building software tools, web development, and content creation.
 
 ## 📈 GitHub Stats
 
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=surajkareppagol&hide=stars,issues&show_icons=true&custom_title=GitHub%20Stats)](https://github.com/surajkareppagol/github-readme-stats)
 
-## Language Stats
+## #️⃣ Language Stats
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=surajkareppagol&layout=compact&hide=html,scss,pug)
 
