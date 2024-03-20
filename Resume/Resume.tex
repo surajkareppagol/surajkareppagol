@@ -1,0 +1,124 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Custom command for project entries
+\newcommand{\projectentry}[5]{
+  \noindent
+  \textbf{#1} \hfill
+  \href{#4}{Link} $|$ \href{#5}{GitHub} \\
+  #2 \\
+  \textit{Tools used:} #3
+  \vspace{6pt} % Adjust the spacing between projects as needed
+}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+  \textbf{\LARGE Suraj Kareppagol} \\
+  \vspace{6pt}
+  \href{surajkareppagol.social@gmail.com}{Email} $|$ \href{https://github.com/surajkareppagol}{Github} $|$ \href{https://surajkareppagol.github.io}{Portfolio} $|$ +91 8088346618
+\end{center}
+
+\section*{Skills}
+\begin{itemize}[label=--,left=0pt, align=left]
+  \item \textbf{Programming languages:} C, C++, Python, Javascript, TypeScript, Rust
+  \item \textbf{Libraries/Frameworks:} React, ExpressJS, VueJS, NodeJS
+  \item \textbf{Tools/Platforms:} Linux, VS Code, Git
+  \item \textbf{Databases:} PostgreSQL, MongoDB
+\end{itemize}
+
+\section*{Projects}
+\projectentry{Libefile}{
+  Developed a C Library for file manipulation, providing abstract functions to simplify working with files.
+}{
+  C, Make, Git
+}{https://github.com/surajkareppagol/Lib-efile}{https://github.com/surajkareppagol/Lib-efile}
+
+\projectentry{AURPy}{
+  Created an Arch AUR Helper with Python, integrating Aurweb RPC interface. Enables package installation from AUR and facilitates package searches.
+}{
+  Python, Git
+}{https://github.com/surajkareppagol/AURPy}{https://github.com/surajkareppagol/AURPy}
+
+\projectentry{AniASCII}{
+  Implemented a C Program for animating ASCII arts, offering a variety of animations.
+}{
+  C, Make, Git
+}{https://github.com/surajkareppagol/ANIASCII}{https://github.com/surajkareppagol/ANIASCII}
+
+\projectentry{CreateTT}{
+  Developed a Python TUI time table builder using the rich module for enhanced visuals and a modular design.
+}{
+  Python, Rich
+}{https://github.com/surajkareppagol/CreateTT}{https://github.com/surajkareppagol/CreateTT}
+
+\projectentry{Beginning End Sort}{
+  Developed a sorting algorithm with $O(n^2)$ time complexity, inspired by Quick Sort and Selection Sort.
+}{
+  C, Git
+}{https://github.com/surajkareppagol/BESort}{https://github.com/surajkareppagol/BESort}
+
+\projectentry{Pix Creator Web}{
+  Designed and implemented a web application for creating Pixel Arts. Supported various canvas sizes, templates, and tools.
+}{
+  HTML, CSS, SCSS, JavaScript, Git
+}{https://surajkareppagol.github.io/pix-creator-web/}{https://github.com/surajkareppagol/Pix-Creator-Web}
+
+\projectentry{XML To JSON Parser}{
+  Created a Python script to convert XML to JSON, forming a collection of parsers.
+}{
+  Python, XML, JSON, Git
+}{https://github.com/surajkareppagol/Parser}{https://github.com/surajkareppagol/Parser}
+
+\projectentry{File Sharer}{
+  Engineered a simple CRUD based File and Message sharing web application.
+}{
+  HTML, CSS, SCSS, JavaScript, NodeJS, ExpressJS, Pug, MongoDB, Git
+}{https://github.com/surajkareppagol/FileSharer}{https://github.com/surajkareppagol/FileSharer}
+
+\projectentry{Numerical Methods}{
+  Implemented mathematical numerical methods in C Language.
+}{
+  C, Git
+}{https://github.com/surajkareppagol/Numerical-Methods}{https://github.com/surajkareppagol/Numerical-Methods}
+
+\projectentry{Tic Tac Toe}{
+  Developed a classic Tic Tac Toe game with a minimal and beautiful UI, offering both Light and Dark themes.
+}{
+  HTML, CSS, SCSS, JavaScript, Git
+}{https://surajkareppagol.github.io/Tic-Tac-Toe/}{https://github.com/surajkareppagol/Tic-Tac-Toe}
+
+\projectentry{Portfolio Site}{
+  Created a personal portfolio site using various web technologies. Implemented with a minimal and modern UI.
+}{
+  HTML, CSS, SCSS, JavaScript, Git
+}{https://suraj-kareppagol.web.app/}{https://github.com/surajkareppagol/surajkareppagol.github.io}
+
+\section*{Academics}
+Computer Organization, Data structures, Algorithms, Operating Systems, Database System, Computer Graphics, Computer Networks, Cryptography, Artificial Intelligence and Machine Learning, Automata Theory, Compiler Design
+
+\section*{Experience}
+\noindent
+\textbf{4G5G Consultants | Software Engineering Intern} \hfill Karnataka | June 2023 - November 2023
+\begin{itemize}[left=0pt]
+  \item Internship at 4G5G Consultants, a Wireless Technology company.
+  \item Tested and optimized RAN configurations, contributing to enhanced network performance.
+  \item Gained proficiency in Linux, CLI tools, Version Control Systems, and cloud technologies.
+\end{itemize}
+
+\section*{Education}
+\noindent
+\textbf{Jain College Of Engineering, Belagavi, Karnataka} \hfill July 2020 - July 2024 \\
+Computer Science And Engineering (B.E) \hfill CGPA: 9.28
+
+\section*{Certificates}
+\begin{itemize}[label=--,left=0pt]
+  \item \href{https://www.hackerrank.com/certificates/4549bfcbe000}{Python - Hackerrank}
+  \item \href{https://www.hackerrank.com/certificates/c045fb9d30e6}{CSS - Hackerrank}
+\end{itemize}
+
+\end{document}
