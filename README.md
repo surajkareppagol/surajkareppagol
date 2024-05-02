@@ -1,10 +1,6 @@
 # Hello 👋
 
-Tinkering with libraries, software tools, and algorithms.
-
-## #️⃣ Language Stats
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=surajkareppagol&layout=compact&hide=html,scss,pug)
+Learning about computers.
 
 ## 🧰 Tools
 
