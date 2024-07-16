@@ -1,0 +1,33 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "bottom",
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'CodeNewRoman Nerd Font'",
+    "editor.fontSize": 22,
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderLineHighlight": "none",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.occurrencesHighlight": "off",
+    "editor.matchBrackets": "never",
+    "editor.glyphMargin": false,
+    "explorer.openEditors.visible": 0,
+    "workbench.editor.showIcons": false,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#0000"
+    },
+    "workbench.productIconTheme": "material-product-icons",
+    "explorer.compactFolders": false,
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "symbols",
+    "workbench.sideBar.location": "right",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "workbench.colorTheme": "Expo Dark",
+    "window.menuBarVisibility": "toggle",
+    "workbench.editor.enablePreview": false,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on"
+}
