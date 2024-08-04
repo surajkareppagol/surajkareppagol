@@ -52,7 +52,8 @@ noremap <c-right> <c-w><
 
 " NERDTree specific mappings.
 " Map the F3 key to toggle NERDTree open and close.
-nnoremap <F3> :NERDTreeToggle<cr>
+" nnoremap <F3> :NERDTreeToggle<cr>
+nnoremap <c-w> :NERDTreeToggle<CR>
 
 " Have nerdtree ignore certain files and directories.
 let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']

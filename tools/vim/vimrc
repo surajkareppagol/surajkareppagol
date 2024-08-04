@@ -27,11 +27,11 @@ syntax on
 " Add numbers to the file.
 set number
 
+" Add relative numbers to the file.
+set relativenumber
+
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
-
-" Highlight cursor line underneath the cursor vertically.
-" set cursorcolumn
 
 " Set shift width to 4 spaces.
 set shiftwidth=2
@@ -89,6 +89,10 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " Set backspace back
 set backspace=indent,eol,start
 
+" Change cursor block to line
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 " PLUGINS ---------------------------------------------{{{
 
 source ~/.vim/scripts/plugins.vim
@@ -124,4 +128,3 @@ source ~/.vim/scripts/coc.vim
 source ~/.vim/scripts/colors.vim
 
 " }}}
-

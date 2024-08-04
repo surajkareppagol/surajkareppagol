@@ -1,6 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
   Plug 'preservim/nerdtree'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  
 
   " Use release branch (recommended)
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -20,5 +22,8 @@ call plug#begin('~/.vim/plugged')
 
   " Dev icons for NERDTree
   Plug 'ryanoasis/vim-devicons'
+
+  " Catppuccin theme
+  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
