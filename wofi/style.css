@@ -2,14 +2,14 @@ window {
   font-family: "CaskaydiaCove NFP";
   margin: 0px;
   border: 1px solid rgba(0, 0, 0, 0.9);
-  background-color: rgba(192, 202, 245, 1); 
+  background-color: rgba(31, 35, 53, 0.9);
   border-radius: 10px;
 }
 
 #input {
   margin: 5px;
   border: none;
-  color: #f8f8f2;
+  color: #ffffff;
   background-color: rgba(55, 59, 65, 0.95);
 }
 
@@ -33,7 +33,7 @@ window {
 #text {
   margin: 5px;
   border: none;
-  color: #15161E;
+  color: #ffffff;
 }
 
 #entry {
