@@ -6,16 +6,10 @@ return {
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
+		config = function()
+			require("nvim-tree").setup({})
+		end,
 	},
-	{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {},
-	},
-	{ "kyazdani42/nvim-web-devicons" },
-	{ "NTBBloodbath/galaxyline.nvim" },
-
 	{
 		"romgrk/barbar.nvim",
 		dependencies = {
@@ -25,11 +19,27 @@ return {
 		init = function()
 			vim.g.barbar_auto_setup = false
 		end,
+		opts = {},
 		version = "^1.0.0", -- optional: only update when a new 1.x version is released
+	},
+	{
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.8",
+		-- or                              , branch = '0.1.x',
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
+	{
+		"stevearc/conform.nvim",
+		opts = {},
 	},
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
 		keys = {
 			{
 				"<leader>?",
@@ -40,17 +50,7 @@ return {
 			},
 		},
 	},
-	{
-		"folke/noice.nvim",
-		event = "VeryLazy",
-		version = "4.4.7",
-		dependencies = {
-			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
-		},
-	},
-	{
-		"folke/todo-comments.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
-	},
+	{ "akinsho/toggleterm.nvim", version = "*", config = true },
 }
+
+-- TOGGLETERM

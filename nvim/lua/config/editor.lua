@@ -1,18 +1,12 @@
--- File Navigation
-require("nvim-tree").setup({})
+-- NVIM TREE
 
--- Statusline
-require("galaxyline.themes.eviline")
+require("nvim-tree").setup()
 
--- Tabline
+-- BARBAR
 
-vim.g.barbar_auto_setup = false -- disable auto-setup
+vim.g.barbar_auto_setup = false
 
 require("barbar").setup({
-	-- WARN: do not copy everything below into your config!
-	--       It is just an example of what configuration options there are.
-	--       The defaults are suitable for most people.
-
 	-- Enable/disable animations
 	animation = true,
 
@@ -29,8 +23,8 @@ require("barbar").setup({
 	clickable = true,
 
 	-- Excludes buffers from the tabline
-	exclude_ft = { "javascript" },
-	exclude_name = { "package.json" },
+	exclude_ft = {},
+	exclude_name = {},
 
 	-- A buffer to this direction will be focused (if it exists) when closing the current buffer.
 	-- Valid options are 'left' (the default), 'previous', and 'right'
@@ -144,15 +138,62 @@ require("barbar").setup({
 
 	-- sorting options
 	sort = {
-		-- tells barbar to ignore case differences while sorting buffers
 		ignore_case = true,
 	},
 })
 
--- Noice UI
+-- TELESCOPE
 
-require("noice").setup({})
+require("telescope").setup({
+	defaults = {
+		-- Default configuration for telescope goes here:
+		-- config_key = value,
+		mappings = {
+			i = {
+				-- map actions.which_key to <C-h> (default: <C-/>)
+				-- actions.which_key shows the mappings for your picker,
+				-- e.g. git_{create, delete, ...}_branch for the git_branches picker
+				["<C-h>"] = "which_key",
+			},
+		},
+	},
+	pickers = {
+		-- Default configuration for builtin pickers goes here:
+		-- picker_name = {
+		--   picker_config_key = value,
+		--   ...
+		-- }
+		-- Now the picker_config_key will be applied every time you call this
+		-- builtin picker
+	},
+	extensions = {
+		-- Your extension configuration goes here:
+		-- extension_name = {
+		--   extension_config_key = value,
+		-- }
+		-- please take a look at the readme of the extension you want to configure
+	},
+})
 
--- Todo comments
+-- COMFORT
 
-require("todo-comments").setup({})
+require("conform").setup({
+	formatters_by_ft = {
+		lua = { "stylua" },
+		python = { "isort", "black" },
+		c = { "clang-format" },
+		cpp = { "clang-format" },
+		json = { "jq" },
+	},
+})
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+	pattern = "*",
+	callback = function(args)
+		require("conform").format({ bufnr = args.buf })
+	end,
+})
+
+-- TOGGLETERM
+
+require("toggleterm").setup({})
