@@ -184,6 +184,7 @@ require("conform").setup({
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 		json = { "jq" },
+		rust = { "rustfmt" },
 	},
 })
 

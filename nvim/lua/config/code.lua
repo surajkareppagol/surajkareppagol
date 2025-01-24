@@ -14,6 +14,7 @@ require("mason").setup({
 
 require("lspconfig").clangd.setup({})
 require("lspconfig").lua_ls.setup({})
+require("lspconfig").rust_analyzer.setup({})
 
 -- COMPLETION
 
@@ -47,6 +48,10 @@ require("lspconfig")["clangd"].setup({
 })
 
 require("lspconfig")["luals"].setup({
+	capabilities = capabilities,
+})
+
+require("lspconfig")["rust_analyzer"].setup({
 	capabilities = capabilities,
 })
 

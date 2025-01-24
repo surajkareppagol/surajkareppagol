@@ -53,6 +53,7 @@ map("n", "<leader>fb", "<Cmd>Telescope buffers<CR>", opts)
 map("n", "<leader>fh", "<Cmd>Telescope help_tags<CR>", opts)
 
 map("n", "<leader>t", "<Cmd>ToggleTerm<CR>", opts)
+map("t", "<ESC>", [[<C-\><C-n>]], opts)
 
 -- WHICH KEY
 
